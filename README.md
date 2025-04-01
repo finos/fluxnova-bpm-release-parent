@@ -1,10 +1,16 @@
-camunda-bpm-release-parent
-======================
+[![FINOS - Forming](https://cdn.jsdelivr.net/gh/finos/contrib-toolbox@master/images/badge-forming.svg)](https://community.finos.org/docs/governance/Software-Projects/project-lifecycle)
+
+# Flowave BPM Release Parent
 
 Pom which can be inherited for Camunda Platform releases defining some bpm release properties.
 It is a child of [camunda-release-parent](https://github.com/camunda/camunda-release-parent).
 
-License
--------
+## Contributing
+
+Have a look at the main Flowave [CONTRIBUTING.md](https://github.com/finos/flowave-bpm-platform/blob/main/CONTRIBUTING.md) file for our general contribution guidelines and governance policies.
+
+## License
+
+Copyright 2025 FINOS
 
 The source files in this repository are made available under the [Apache License Version 2.0](./LICENSE).
