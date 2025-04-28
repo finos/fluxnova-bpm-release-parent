@@ -249,7 +249,7 @@ limitations under the License.</license.inlineHeader>
   <repositories>
     <repository>
       <id>github</id>
-      <url>https://maven.pkg.github.com/finos/flowave-bpm-platform</url>
+      <url>https://maven.pkg.github.com/finos/flowave-bpm-release-parent</url>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
@@ -273,12 +273,12 @@ limitations under the License.</license.inlineHeader>
     <repository>
       <id>github</id>
       <name>GitHub Flowave Maven Packages</name>
-      <url>https://maven.pkg.github.com/finos/flowave-bpm-platform</url>
+      <url>https://maven.pkg.github.com/finos/flowave-bpm-release-parent</url>
     </repository>
     <snapshotRepository>
       <id>github</id>
       <name>GitHub Flowave Maven Packages</name>
-      <url>https://maven.pkg.github.com/finos/flowave-bpm-platform</url>
+      <url>https://maven.pkg.github.com/finos/flowave-bpm-release-parent</url>
     </snapshotRepository>
   </distributionManagement>
 
