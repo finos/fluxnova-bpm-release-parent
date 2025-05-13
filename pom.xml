@@ -249,6 +249,13 @@ limitations under the License.</license.inlineHeader>
   <repositories>
     <repository>
       <id>github</id>
+      <url>https://maven.pkg.github.com/finos/flowave-release-parent</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>github</id>
       <url>https://maven.pkg.github.com/finos/flowave-bpm-release-parent</url>
       <snapshots>
         <enabled>true</enabled>
