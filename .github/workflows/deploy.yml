@@ -30,4 +30,4 @@ jobs:
         uses: ./.github/actions/java-setup
 
       - name: Deploy
-        run: mvn -B -e clean deploy
+        run: mvn -B -e clean deploy -s ./settings.xml
