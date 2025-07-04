@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.flowave</groupId>
+    <groupId>org.finos.flowave</groupId>
     <artifactId>flowave-release-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <!-- do not remove empty tag - http://jira.codehaus.org/browse/MNG-4687 -->
