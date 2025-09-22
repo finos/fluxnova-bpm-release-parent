@@ -1,4 +1,4 @@
-name: Deploy Flowave bpm release parent
+name: Deploy Fluxnova bpm release parent
 
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }}

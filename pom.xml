@@ -3,20 +3,20 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.finos.flowave</groupId>
-    <artifactId>flowave-release-parent</artifactId>
+    <groupId>org.finos.fluxnova</groupId>
+    <artifactId>fluxnova-release-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <!-- do not remove empty tag - http://jira.codehaus.org/browse/MNG-4687 -->
     <relativePath />
   </parent>
 
-  <artifactId>flowave-bpm-release-parent</artifactId>
+  <artifactId>fluxnova-bpm-release-parent</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>Flowave Platform - Release Parent Pom</name>
+  <name>Fluxnova Platform - Release Parent Pom</name>
 
   <description>
-    This pom defines the required plugins and profiles to allow a Flowave Platform release build.
+    This pom defines the required plugins and profiles to allow a Fluxnova Platform release build.
   </description>
 
   <properties>
@@ -80,13 +80,13 @@ limitations under the License.</license.inlineHeader>
               <include>**/ProcessApplication.xsd</include>
             </includes>
             <excludes>
-              <exclude>**/org/finos/flowave/bpm/engine/impl/calendar/CronExpression.java</exclude>
-              <exclude>**/org/finos/flowave/bpm/engine/impl/juel/*.java</exclude>
-              <exclude>**/org/finos/flowave/bpm/engine/impl/javax/el/*.java</exclude>
-              <exclude>**/org/finos/flowave/bpm/engine/spring/components/**/*.java</exclude>
-              <exclude>**/org/finos/flowave/bpm/engine/spring/annotations/*.java</exclude>
-              <exclude>**/org/finos/flowave/bpm/engine/impl/digest/_apacheCommonsCodec/*.java</exclude>
-              <exclude>**/org/finos/flowave/bpm/licensecheck/_apacheCommonsCodec/*.java</exclude>
+              <exclude>**/org/finos/fluxnova/bpm/engine/impl/calendar/CronExpression.java</exclude>
+              <exclude>**/org/finos/fluxnova/bpm/engine/impl/juel/*.java</exclude>
+              <exclude>**/org/finos/fluxnova/bpm/engine/impl/javax/el/*.java</exclude>
+              <exclude>**/org/finos/fluxnova/bpm/engine/spring/components/**/*.java</exclude>
+              <exclude>**/org/finos/fluxnova/bpm/engine/spring/annotations/*.java</exclude>
+              <exclude>**/org/finos/fluxnova/bpm/engine/impl/digest/_apacheCommonsCodec/*.java</exclude>
+              <exclude>**/org/finos/fluxnova/bpm/licensecheck/_apacheCommonsCodec/*.java</exclude>
               <exclude>**/node_modules/**</exclude>
               <exclude>.mvn/wrapper/MavenWrapperDownloader.java</exclude>
             </excludes>
@@ -138,7 +138,7 @@ limitations under the License.</license.inlineHeader>
 
     <!-- Plugins used in the context of creating a license book. -->
     <!-- If activated (see properties), these plugins create a list of
-      non-Flowave dependencies and attach it as an artifact to the build.
+      non-Fluxnova dependencies and attach it as an artifact to the build.
       The license book generator uses these files to create the book. -->
     <plugins>
       <plugin>
@@ -156,7 +156,7 @@ limitations under the License.</license.inlineHeader>
               <skip>${skip-third-party-bom}</skip>
               <includeScope>test</includeScope><!-- Gives all dependencies; scopes filtering is applied in the ant step -->
               <sort>true</sort>
-              <excludeGroupIds>org.finos.flowave</excludeGroupIds>
+              <excludeGroupIds>org.finos.fluxnova</excludeGroupIds>
               <outputFile>${project.build.directory}/dependencies/dependencies-generated.txt</outputFile>
             </configuration>
           </execution>
@@ -237,8 +237,8 @@ limitations under the License.</license.inlineHeader>
   </licenses>
 
   <organization>
-    <name>Camunda Services GmbH</name>
-    <url>http://www.camunda.com</url>
+    <name>Fluxnova Community</name>
+    <url>http://fluxnova.finos.org</url>
   </organization>
 
   <issueManagement>
@@ -248,15 +248,15 @@ limitations under the License.</license.inlineHeader>
 
   <repositories>
     <repository>
-      <id>flowave-release-parent</id>
-      <url>https://maven.pkg.github.com/finos/flowave-release-parent</url>
+      <id>fluxnova-release-parent</id>
+      <url>https://maven.pkg.github.com/finos/fluxnova-release-parent</url>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
     </repository>
     <repository>
-      <id>flowave-bpm-release-parent</id>
-      <url>https://maven.pkg.github.com/finos/flowave-bpm-release-parent</url>
+      <id>fluxnova-bpm-release-parent</id>
+      <url>https://maven.pkg.github.com/finos/fluxnova-bpm-release-parent</url>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
@@ -265,14 +265,14 @@ limitations under the License.</license.inlineHeader>
 
   <distributionManagement>
     <repository>
-      <id>flowave-bpm-release-parent</id>
-      <name>GitHub Flowave Maven Packages</name>
-      <url>https://maven.pkg.github.com/finos/flowave-bpm-release-parent</url>
+      <id>fluxnova-bpm-release-parent</id>
+      <name>GitHub Fluxnova Maven Packages</name>
+      <url>https://maven.pkg.github.com/finos/fluxnova-bpm-release-parent</url>
     </repository>
     <snapshotRepository>
-      <id>flowave-bpm-release-parent</id>
-      <name>GitHub Flowave Maven Packages</name>
-      <url>https://maven.pkg.github.com/finos/flowave-bpm-release-parent</url>
+      <id>fluxnova-bpm-release-parent</id>
+      <name>GitHub Fluxnova Maven Packages</name>
+      <url>https://maven.pkg.github.com/finos/fluxnova-bpm-release-parent</url>
     </snapshotRepository>
   </distributionManagement>
 

@@ -1,13 +1,13 @@
 [![FINOS - Forming](https://cdn.jsdelivr.net/gh/finos/contrib-toolbox@master/images/badge-forming.svg)](https://community.finos.org/docs/governance/Software-Projects/project-lifecycle)
 
-# Flowave BPM Release Parent
+# Fluxnova BPM Release Parent
 
-Pom which can be inherited for Camunda Platform releases defining some bpm release properties.
-It is a child of [camunda-release-parent](https://github.com/camunda/camunda-release-parent).
+POM which can be inherited for Fluxnova Platform releases defining some bpm release properties.
+It is a child of [fluxnova-release-parent](https://github.com/finos/fluxnova-release-parent).
 
 ## Contributing
 
-Have a look at the main Flowave [CONTRIBUTING.md](https://github.com/finos/flowave-bpm-platform/blob/main/CONTRIBUTING.md) file for our general contribution guidelines and governance policies.
+Have a look at the main Fluxnova [CONTRIBUTING.md](https://github.com/finos/fluxnova-bpm-platform/blob/main/CONTRIBUTING.md) file for our general contribution guidelines and governance policies.
 
 ## License
 
