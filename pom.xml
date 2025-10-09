@@ -19,6 +19,14 @@
     This pom defines the required plugins and profiles to allow a Fluxnova Platform release build.
   </description>
 
+  <url>http://fluxnova.finos.org</url>
+  <scm>
+    <connection>scm:git:https://github.com/finos/fluxnova-bpm-release-parent.git</connection>
+    <developerConnection>scm:git:https://github.com/finos/fluxnova-bpm-release-parent.git</developerConnection>
+    <url>https://github.com/finos/fluxnova-bpm-release-parent</url>
+    <tag>HEAD</tag>
+  </scm>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- Avoid the message "[WARNING] Using platform encoding (UTF-8 actually) ... also for the failsafe plugin -->
@@ -226,6 +234,18 @@ limitations under the License.</license.inlineHeader>
           </execution>
         </executions>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.sonatype.central</groupId>
+        <artifactId>central-publishing-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+      </plugin>
     </plugins>
   </build>
 
@@ -263,6 +283,8 @@ limitations under the License.</license.inlineHeader>
     </repository>
   </repositories>
 
+  <!-- commented as per instruction on https://community.finos.org/docs/development-infrastructure/continuous-integration/java/#artifact-publishing
+  for publishing artifacts on maven central
   <distributionManagement>
     <repository>
       <id>fluxnova-bpm-release-parent</id>
@@ -274,6 +296,6 @@ limitations under the License.</license.inlineHeader>
       <name>GitHub Fluxnova Maven Packages</name>
       <url>https://maven.pkg.github.com/finos/fluxnova-bpm-release-parent</url>
     </snapshotRepository>
-  </distributionManagement>
+  </distributionManagement>-->
 
 </project>
