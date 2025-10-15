@@ -44,6 +44,10 @@ jobs:
       - name: Download deps and plugins
         run: mvn de.qaware.maven:go-offline-maven-plugin:resolve-dependencies -s ./settings.xml
 
+      - name: Configure GitHub authentication for Maven Release Plugin
+        run: |
+          git config --global url."https://${GH_TOKEN}@github.com/".insteadOf "https://github.com/"
+
         #TODO: Remove -DdryRun=true for actual deployment
       - name: Prepare release
         run: mvn -B -DpreparationGoals=clean -DdryRun=true release:prepare -Prelease -DinteractiveMode=false
