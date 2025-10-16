@@ -5,7 +5,8 @@
   <parent>
     <groupId>org.finos.fluxnova</groupId>
     <artifactId>fluxnova-release-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <!-- updated version for maven central release, as parent has been release with 0.0.1 version -->
+    <version>0.0.1</version>
     <!-- do not remove empty tag - http://jira.codehaus.org/browse/MNG-4687 -->
     <relativePath />
   </parent>
