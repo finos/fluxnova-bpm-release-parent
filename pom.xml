@@ -353,19 +353,12 @@ limitations under the License.</license.inlineHeader>
     </repository>
   </repositories>
 
-  <!-- commented as per instruction on https://community.finos.org/docs/development-infrastructure/continuous-integration/java/#artifact-publishing
-  for publishing artifacts on maven central
   <distributionManagement>
-    <repository>
-      <id>fluxnova-bpm-release-parent</id>
-      <name>GitHub Fluxnova Maven Packages</name>
-      <url>https://maven.pkg.github.com/finos/fluxnova-bpm-release-parent</url>
-    </repository>
     <snapshotRepository>
       <id>fluxnova-bpm-release-parent</id>
       <name>GitHub Fluxnova Maven Packages</name>
       <url>https://maven.pkg.github.com/finos/fluxnova-bpm-release-parent</url>
     </snapshotRepository>
-  </distributionManagement>-->
+  </distributionManagement>
 
 </project>
