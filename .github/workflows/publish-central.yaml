@@ -58,7 +58,7 @@ jobs:
         run: |
           git config --global url."https://${GH_TOKEN}@github.com/".insteadOf "https://github.com/"
 
-        #TODO: auto publishing is set to false in fluxnova-release-parent pom, so manual publishing is needed after perform step
+        #auto publishing is set to false in fluxnova-release-parent pom, so manual publishing is needed after workflow run
       - name: Prepare release
         run: mvn -B -DpreparationGoals=clean release:prepare -Prelease -DinteractiveMode=false
 

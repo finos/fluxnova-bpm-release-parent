@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.finos.fluxnova</groupId>
     <artifactId>fluxnova-release-parent</artifactId>
-    <!-- updated version for maven central release, as parent has been release with 0.0.1 version -->
+    <!-- updated version for maven central release, as parent has been released with 0.0.1 version -->
     <version>0.0.1</version>
     <!-- do not remove empty tag - http://jira.codehaus.org/browse/MNG-4687 -->
     <relativePath />
@@ -267,7 +267,8 @@ limitations under the License.</license.inlineHeader>
     </plugins>
   </build>
 
-  <profiles>
+  <!-- TODO: test if it inherits profile from parent pom -->
+  <!--profiles>
     <profile>
       <id>release</id>
       <build>
@@ -297,8 +298,8 @@ limitations under the License.</license.inlineHeader>
                 </goals>
               </execution>
             </executions>
-          </plugin>
-          <!-- Same as attach-sources profile -->
+          </plugin-->
+          <!-- Same as attach-sources profile
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-source-plugin</artifactId>
@@ -317,7 +318,7 @@ limitations under the License.</license.inlineHeader>
         </plugins>
       </build>
     </profile>
-  </profiles>
+  </profiles-->
 
   <licenses>
     <license>
