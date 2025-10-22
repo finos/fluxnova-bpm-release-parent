@@ -327,10 +327,10 @@ limitations under the License.</license.inlineHeader>
     </license>
   </licenses>
 
-  <organization>
+  <!--organization>
     <name>Fluxnova Community</name>
     <url>http://fluxnova.finos.org</url>
-  </organization>
+  </organization-->
 
   <issueManagement>
     <system>GitHub Issues</system>
