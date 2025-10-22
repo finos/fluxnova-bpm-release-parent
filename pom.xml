@@ -5,7 +5,6 @@
   <parent>
     <groupId>org.finos.fluxnova</groupId>
     <artifactId>fluxnova-release-parent</artifactId>
-    <!-- updated version for maven central release, as parent has been released with 0.0.1 version -->
     <version>0.0.1</version>
     <!-- do not remove empty tag - http://jira.codehaus.org/browse/MNG-4687 -->
     <relativePath />
@@ -267,70 +266,12 @@ limitations under the License.</license.inlineHeader>
     </plugins>
   </build>
 
-  <!-- TODO: test if it inherits profile from parent pom -->
-  <!--profiles>
-    <profile>
-      <id>release</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>sign-release-artifacts</id>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-javadoc-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>attach-javadocs</id>
-                <phase>package</phase>
-                <goals>
-                  <goal>jar</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin-->
-          <!-- Same as attach-sources profile
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-source-plugin</artifactId>
-            <configuration>
-              <skipSource>${skip.source.attach}</skipSource>
-            </configuration>
-            <executions>
-              <execution>
-                <id>release-attach-sources</id>
-                <goals>
-                  <goal>jar-no-fork</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles-->
-
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
       <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
     </license>
   </licenses>
-
-  <!--organization>
-    <name>Fluxnova Community</name>
-    <url>http://fluxnova.finos.org</url>
-  </organization-->
 
   <issueManagement>
     <system>GitHub Issues</system>
