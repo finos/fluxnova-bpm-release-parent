@@ -29,9 +29,5 @@ jobs:
       - name: Java setup
         uses: ./.github/actions/java-setup
 
-      - name: Set version
-        # TODO - replace hardcoded 0.0.1-SNAPSHOT with something dynamic; maybe use auto increment feature?
-        run: mvn versions:set -DnewVersion=0.0.1-SNAPSHOT -DgenerateBackupPoms=false -s ./settings.xml
-
       - name: Deploy
         run: mvn -B -e clean deploy -s ./settings.xml
