@@ -189,7 +189,7 @@ limitations under the License.</license.inlineHeader>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-antrun-plugin</artifactId>
-        <version>1.8</version>
+        <version>3.2.0</version>
         <executions>
           <!-- Reformats the dependency list:
             - into a plain list (no header line, no indentation)
