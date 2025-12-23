@@ -226,7 +226,7 @@ limitations under the License.</license.inlineHeader>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>build-helper-maven-plugin</artifactId>
-        <version>1.9.1</version>
+        <version>1.12</version>
         <executions>
           <!-- Attaches the dependency BOM to the Maven build so
             that it can be consumed as a Maven artifact in the license book
