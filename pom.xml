@@ -31,7 +31,7 @@
     <!-- Avoid the message "[WARNING] Using platform encoding (UTF-8 actually) ... also for the failsafe plugin -->
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <plugin.version.license>3.0</plugin.version.license>
+    <plugin.version.license>5.0.0</plugin.version.license>
     <plugin.version.nexus-staging>1.6.13</plugin.version.nexus-staging>
 
     <license.inlineHeader>
