@@ -168,7 +168,7 @@ limitations under the License.</license.inlineHeader>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
-        <version>2.8</version>
+        <version>2.10</version>
         <executions>
           <execution>
             <id>list-deps</id>
