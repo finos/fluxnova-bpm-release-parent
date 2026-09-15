@@ -6,7 +6,7 @@ runs:
     - name: Set up JDK
       uses: actions/setup-java@v5
       with:
-        java-version: 21
+        java-version: 21.0.12+101.0.LTS
         distribution: 'temurin'
         server-id: ossrh
         server-username: ${{ env.CI_DEPLOY_USERNAME }}
